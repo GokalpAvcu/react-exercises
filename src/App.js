@@ -4,12 +4,12 @@ import { EditUser } from "./components/EditUser";
 import { Home } from "./components/Home";
 
 import { Routes, Route } from "react-router-dom";
-
+import "bootstrap/dist/css/bootstrap.min.css"; // bootstrap import ettik
 
 function App() {
   return (
-    <div style={{maxWidth: "30rem", margin: "4rem auto"}}>
-     <Routes>
+    <div style={{ maxWidth: "30rem", margin: "4rem auto" }}>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/edit" element={<EditUser />} />
         <Route path="/add" element={<AddUser />} />
